@@ -4,7 +4,7 @@ using PersonalExpenseTrackerSystem.Domain.Entities;
 
 namespace Web.Pages;
 
-public class Expenses : PageModel
+public class ExpensesList : PageModel
 {
     [BindProperty]
     public List<Expense> Expenses { get; set; }
