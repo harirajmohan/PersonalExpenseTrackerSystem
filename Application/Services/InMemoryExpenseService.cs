@@ -9,36 +9,49 @@ public class InMemoryExpenseService : IExpenseService
 
     public Task<Expense> AddExpenseAsync(Expense expense)
     {
-        throw new NotImplementedException();
+        _expenses.Add(expense);
+        return Task.FromResult(expense);
     }
 
-    public Task<bool> DeleteExpenseAsync(Guid id)
+    public Task<bool> DeleteExpenseAsync(int id)
     {
-        throw new NotImplementedException();
+        var expenseToDelete = _expenses.SingleOrDefault(x => x.Id == id);
+        if (expenseToDelete is null)
+            throw new Exception("expense not found!");
+        
+        _expenses.Remove(expenseToDelete);
+        return Task.FromResult(true);
     }
 
-    public Task<IEnumerable<Expense>> GetAllExpensesAsync()
-    {
-        throw new NotImplementedException();
-    }
+    public Task<IEnumerable<Expense>> GetAllExpensesAsync() =>
+        Task.FromResult<IEnumerable<Expense>>(_expenses.ToList());
 
     public Task<IEnumerable<Expense>> GetExpensesByCategoryAsync(string category)
     {
-        throw new NotImplementedException();
+        var result = _expenses.Where(x => x.Category.Equals(category, StringComparison.OrdinalIgnoreCase));
+        return Task.FromResult<IEnumerable<Expense>>(result.ToList());
     }
 
     public Task<IEnumerable<Expense>> GetExpensesByDateRangeAsync(DateTime startDate, DateTime endDate)
     {
-        throw new NotImplementedException();
+        var result = _expenses.Where(x => x.DateAdded >= startDate && x.DateAdded <= endDate);
+        return Task.FromResult<IEnumerable<Expense>>(result.ToList());
     }
 
-    public Task<decimal> GetTotalExpensesAsync()
-    {
-        throw new NotImplementedException();
-    }
+    public Task<decimal> GetTotalExpensesAsync() => Task.FromResult(_expenses.Sum(x => x.Amount));
 
     public Task<bool> UpdateExpenseAsync(Expense expense)
     {
-        throw new NotImplementedException();
+        var expenseToUpdate = _expenses.SingleOrDefault(x => x.Id == expense.Id);
+        if (expenseToUpdate is null)
+            throw new Exception("Expense not found");
+
+        expenseToUpdate.Amount = expense.Amount;
+        expenseToUpdate.Category = expense.Category;
+        expenseToUpdate.DateModified = DateTime.Now;
+        expenseToUpdate.Description = expense.Description;
+
+
+        return Task.FromResult(true);
     }
 }

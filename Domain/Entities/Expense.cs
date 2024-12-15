@@ -7,5 +7,7 @@ public class Expense
     public required decimal Amount { get; set; } = 0;
     public string Category { get; set; } = default!;
     public DateTime DateAdded { get; set; } = DateTime.Now;
+    
+    public DateTime? DateModified { get; set; }
 
 }
