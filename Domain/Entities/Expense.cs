@@ -1,8 +1,8 @@
-﻿namespace PersonalExpenseTrackerSystem.Entities;
+﻿namespace PersonalExpenseTrackerSystem.Domain.Entities;
 
 public class Expense
 {
-    public int ID { get; init; }
+    public int Id { get; init; }
     public string? Description { get; set; }
     public required decimal Amount { get; set; } = 0;
     public string Category { get; set; } = default!;

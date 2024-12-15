@@ -1,6 +1,6 @@
-﻿using PersonalExpenseTrackerSystem.Entities;
+﻿using PersonalExpenseTrackerSystem.Domain.Entities;
 
-namespace PersonalExpenseTrackerSystem.Services.Contract;
+namespace PersonalExpenseTrackerSystem.Application.Contracts;
 
 public interface IExpenseService
 {

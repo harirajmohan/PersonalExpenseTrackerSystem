@@ -1,7 +1,7 @@
-﻿using PersonalExpenseTrackerSystem.Entities;
-using PersonalExpenseTrackerSystem.Services.Contract;
+﻿using PersonalExpenseTrackerSystem.Application.Contracts;
+using PersonalExpenseTrackerSystem.Domain.Entities;
 
-namespace PersonalExpenseTrackerSystem.Services;
+namespace PersonalExpenseTrackerSystem.Application.Services;
 
 public class InMemoryExpenseService : IExpenseService
 {

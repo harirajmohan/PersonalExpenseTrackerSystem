@@ -1,5 +1,5 @@
-using PersonalExpenseTrackerSystem.Services;
-using PersonalExpenseTrackerSystem.Services.Contract;
+using PersonalExpenseTrackerSystem.Application.Contracts;
+using PersonalExpenseTrackerSystem.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
