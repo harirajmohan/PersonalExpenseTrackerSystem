@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTrackerSystem", "src\PersonalExpenseTrackerSystem.csproj", "{6D859A88-D699-47F8-9FF5-2977D05706BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTrackerSystem.Web", "src\PersonalExpenseTrackerSystem.Web.csproj", "{6D859A88-D699-47F8-9FF5-2977D05706BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

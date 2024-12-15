@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PersonalExpenseTrackerSystem.Pages
+namespace PersonalExpenseTrackerSystem.Web.Pages
 {
     public class IndexModel : PageModel
     {
