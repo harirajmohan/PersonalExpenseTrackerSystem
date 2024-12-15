@@ -1,7 +1,13 @@
+using PersonalExpenseTrackerSystem.Services;
+using PersonalExpenseTrackerSystem.Services.Contract;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IExpenseService, InMemoryExpenseService>();
+
 
 var app = builder.Build();
 
