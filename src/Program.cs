@@ -6,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddScoped<IExpenseService, InMemoryExpenseService>();
+builder.Services.AddSingleton<IExpenseService, InMemoryExpenseService>();
+
+
+builder.Services.AddMvc();
 
 
 var app = builder.Build();
@@ -25,6 +28,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 app.MapRazorPages();
 

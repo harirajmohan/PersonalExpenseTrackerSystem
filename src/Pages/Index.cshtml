@@ -5,6 +5,31 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-8">Expense List</h1>
+    <table class="table">
+        <tr>
+            <td>Expense ID</td>
+            <td>Description</td>
+            <td>Amount</td>
+            <td>Category</td>
+            <td>Date Added</td>
+        </tr>
+        @if (Model.list!=null)
+        {
+            foreach (var exp in Model.list)
+            {
+                <tr>
+                    <td>
+                        <a href="/EditExpense?id=@exp.ID">Edit&nbsp;@exp.ID</a><br />
+                        <a asp-page-handler="Delete" asp-page="EditExpense" asp-all-route-data="@(new Dictionary<string, string> { { "id", exp.ID.ToString() },{ "del", "true" } })">Remove</a>
+                    </td>
+                    <td>@exp.Description</td>
+                    <td>@exp.Amount</td>
+                    <td>@exp.Category</td>
+                    <td>@exp.DateAdded</td>
+
+                </tr>
+            }
+        }
+    </table>
 </div>

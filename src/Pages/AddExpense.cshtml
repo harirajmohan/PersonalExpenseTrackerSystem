@@ -1,0 +1,51 @@
+﻿@page
+@model AddExpenseModel
+ 
+<h1>Add Expense</h1>
+
+<form method="post">
+     
+    <table class="table">
+        <tr>
+            <td>
+                <div>
+                    <label for="Description">Expense Description:</label>
+                    <input type="text" name="Description" value="" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div>
+                    <label for="Amount">Amount:</label>
+                    <input type="text" name="Amount" value="" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="Amount"></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label for="Category">Category:</label>
+                    <input type="text" name="Category" value="" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="Category"></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Submit" class="submit" />
+                </div>
+            </td>
+        </tr>
+         
+    </table>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+
