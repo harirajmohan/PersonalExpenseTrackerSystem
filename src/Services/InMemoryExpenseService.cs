@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Options;
 using PersonalExpenseTrackerSystem.Entities;
 using PersonalExpenseTrackerSystem.Services.Contract;
 
@@ -8,6 +9,15 @@ public class InMemoryExpenseService : IExpenseService
 {
     private static readonly List<Expense> _expenses = [];
     private readonly IMapper _mapper;
+    private readonly TransientFaultHandlingOptions options;
+    public InMemoryExpenseService()
+    {
+
+    }
+    public InMemoryExpenseService(IOptions<TransientFaultHandlingOptions> _options)
+    {
+        options = _options.Value;
+    }
 
     public Task<Expense> AddExpenseAsync(Expense expense, CancellationToken cToken = default)
     {      
@@ -49,6 +59,8 @@ public class InMemoryExpenseService : IExpenseService
 
     public Task<List<Expense>> GetAllExpensesAsync(CancellationToken cToken)
     {
+
+
         return Task.FromResult(_expenses);
     }
 

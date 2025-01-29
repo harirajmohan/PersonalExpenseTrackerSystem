@@ -1,0 +1,46 @@
+2025-01-19 11:44:25.443 -05:00 [INF] App has started at Serilog.
+2025-01-19 11:47:42.363 -05:00 [INF] App has started at Serilog.
+2025-01-19 11:55:05.046 -05:00 [INF] App has started at Serilog.
+2025-01-19 11:56:04.000 -05:00 [INF] User profile is available. Using 'C:\Users\mhariraman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-19 11:56:04.327 -05:00 [INF] App has started via Ilogger.
+2025-01-19 11:56:05.155 -05:00 [INF] Now listening on: https://localhost:7010
+2025-01-19 11:56:05.158 -05:00 [INF] Now listening on: http://localhost:5147
+2025-01-19 11:56:05.489 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-19 11:56:05.497 -05:00 [INF] Hosting environment: Development
+2025-01-19 11:56:05.521 -05:00 [INF] Content root path: C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src
+2025-01-19 11:56:06.940 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-01-19 11:56:09.443 -05:00 [INF] Executing endpoint '/Index'
+2025-01-19 11:56:09.639 -05:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-01-19 11:56:09.703 -05:00 [INF] Executing handler method PersonalExpenseTrackerSystem.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-01-19 11:56:47.337 -05:00 [INF] Reached Get method
+2025-01-19 11:56:47.351 -05:00 [INF] Executed handler method OnGet, returned result .
+2025-01-19 11:56:47.371 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-01-19 11:56:47.373 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-01-19 11:56:47.615 -05:00 [INF] Executed page /Index in 37963.1704ms
+2025-01-19 11:56:47.629 -05:00 [INF] Executed endpoint '/Index'
+2025-01-19 11:56:47.647 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 200 null text/html; charset=utf-8 40742.2417ms
+2025-01-19 11:56:47.679 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/PersonalExpenseTrackerSystem.styles.css?v=KyLFfqc4TZzX0mWGXoLXJRDqckCVYMtksHULw25qzNk - null null
+2025-01-19 11:56:47.675 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-01-19 11:56:47.674 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-01-19 11:56:47.820 -05:00 [INF] Sending file. Request path: '/PersonalExpenseTrackerSystem.styles.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\obj\Debug\net8.0\scopedcss\bundle\PersonalExpenseTrackerSystem.styles.css'
+2025-01-19 11:56:47.820 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\css\site.css'
+2025-01-19 11:56:47.848 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/PersonalExpenseTrackerSystem.styles.css?v=KyLFfqc4TZzX0mWGXoLXJRDqckCVYMtksHULw25qzNk - 200 1146 text/css 168.5321ms
+2025-01-19 11:56:47.854 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 180.0798ms
+2025-01-19 11:56:47.871 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2025-01-19 11:56:47.892 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 218.2716ms
+2025-01-19 11:56:48.477 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/jquery/dist/jquery.min.js - null null
+2025-01-19 11:56:48.480 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-19 11:56:48.481 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/_vs/browserLink - null null
+2025-01-19 11:56:48.481 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-01-19 11:56:48.627 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\jquery\dist\jquery.min.js'
+2025-01-19 11:56:48.663 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\js\site.js'
+2025-01-19 11:56:48.668 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 191.0796ms
+2025-01-19 11:56:48.676 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 195.5521ms
+2025-01-19 11:56:48.481 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-01-19 11:56:48.645 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/_framework/aspnetcore-browser-refresh.js - 200 13808 application/javascript; charset=utf-8 165.425ms
+2025-01-19 11:56:48.829 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2025-01-19 11:56:48.877 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 395.8052ms
+2025-01-19 11:56:48.929 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/_vs/browserLink - 200 null text/javascript; charset=UTF-8 448.2754ms
+2025-01-19 11:56:49.129 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/favicon.ico - null null
+2025-01-19 11:56:49.153 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\favicon.ico'
+2025-01-19 11:56:49.183 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/favicon.ico - 200 5430 image/x-icon 53.9651ms

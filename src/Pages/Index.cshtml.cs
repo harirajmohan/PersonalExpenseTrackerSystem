@@ -9,12 +9,13 @@ namespace PersonalExpenseTrackerSystem.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private InMemoryExpenseService expenseService = new InMemoryExpenseService();
+        public IExpenseService expenseService { get; }
         public List<Expense>? list;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        
+        public IndexModel(ILogger<IndexModel> logger, IExpenseService inMemoryExpenseService)
         {
             _logger = logger;
+            expenseService = inMemoryExpenseService;
         }
 
         public async Task OnGet(CancellationToken cToken)
@@ -22,7 +23,7 @@ namespace PersonalExpenseTrackerSystem.Pages
 
              var listTemp = await expenseService.GetAllExpensesAsync(cToken);
             list = listTemp.ToList();
-              
+            _logger.LogInformation("Reached Get method");
         }
     }
 }

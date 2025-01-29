@@ -1,50 +1,74 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Session;
 using PersonalExpenseTrackerSystem.Entities;
+using PersonalExpenseTrackerSystem.Pages.Shared;
 using PersonalExpenseTrackerSystem.Services;
+using PersonalExpenseTrackerSystem.Services.Contract;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PersonalExpenseTrackerSystem.Pages
 {
     [BindProperties]
 
-    public class AddExpenseModel : PageModel
+    public class AddExpenseModel: PageModel
     {
-        private readonly ILogger<AddExpenseModel> _logger;
-
-        public int ID { get; init; }
+        public required ExpenseModel ExpenseModel;
         public required string Description { get; set; }
-        public required decimal Amount { get; set; } = 0;
-        public string Category { get; set; } = default!;
-        public DateTime DateAdded { get; set; } = DateTime.Now;
 
-        private InMemoryExpenseService expenseService = new InMemoryExpenseService();
+        private readonly ILogger<AddExpenseModel> _logger ;
+        private readonly IMapper _mapper;
+        //private readonly ExpenseValidator _validator;
+        private IValidator<ExpenseModel> _validator;
 
-        public AddExpenseModel(ILogger<AddExpenseModel> logger)
+        public IExpenseService expenseService1 = new InMemoryExpenseService();
+        public AddExpenseModel(ILogger<AddExpenseModel> logger, IValidator<ExpenseModel> validator
+            //, IExpenseService expenseService1
+            )
         {
             _logger = logger;
+            _validator = validator;
+            //this.expenseService1 = expenseService1;
         }
-
         public void OnGet()
         {
         }
-        public async Task<RedirectToPageResult> OnPostAsync(CancellationToken cToken)
+        public async Task<IActionResult> OnPostAsync(CancellationToken cToken)
         {
+            //Expense expense = new Expense { Amount = ExpenseModel.Amount, Category = ExpenseModel.Category, DateAdded = DateTime.Now, ID = maxID+1, Description = ExpenseModel.Description };
+            ExpenseModel expenseModel = _mapper.Map<ExpenseModel>(ExpenseModel);
+            _validator.Validate(expenseModel);
+            var result = _validator.Validate(ExpenseModel);
 
+
+            if (!result.IsValid)
+            {
+                // Copy the validation results into ModelState.
+                // ASP.NET uses the ModelState collection to populate 
+                // error messages in the View.
+
+
+                // re-render the view when validation failed.
+                return (IActionResult)ExpenseModel;
+            }
+
+            var expenseService = new InMemoryExpenseService();
             var listTemp = await expenseService.GetAllExpensesAsync(cToken);
             List<Expense> list = listTemp.ToList();
 
             var maxID = 0;
 
-            if (list!=null && list.Count>0)
-                maxID = list.Select(x=>x.ID).Max();
+            if (list != null && list.Count > 0)
+                maxID = list.Select(x => x.ID).Max();
 
-            Expense one = new Expense { Amount = Amount, Category = Category, DateAdded = DateTime.Now, ID = maxID+1, Description = Description };
 
-            _ = expenseService.AddExpenseAsync(one, cToken);
+
+            _ = expenseService.AddExpenseAsync(_mapper.Map<Expense>(ExpenseModel), cToken);
 
             return RedirectToPage("./Index");
 

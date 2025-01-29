@@ -1,0 +1,63 @@
+2025-01-22 19:58:04.144 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:02:05.845 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:02:48.454 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:02:56.793 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:03:00.093 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:08:04.128 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:08:40.865 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:10:50.427 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:26:33.307 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:27:00.047 -05:00 [INF] User profile is available. Using 'C:\Users\mhariraman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-22 20:27:28.253 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:27:43.222 -05:00 [INF] User profile is available. Using 'C:\Users\mhariraman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-22 20:27:43.295 -05:00 [INF] App has started via Ilogger.
+2025-01-22 20:27:43.592 -05:00 [INF] Now listening on: https://localhost:7010
+2025-01-22 20:27:43.594 -05:00 [INF] Now listening on: http://localhost:5147
+2025-01-22 20:27:43.668 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 20:27:43.669 -05:00 [INF] Hosting environment: Development
+2025-01-22 20:27:43.670 -05:00 [INF] Content root path: C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src
+2025-01-22 20:27:44.642 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-01-22 20:27:46.802 -05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-01-22 20:27:46.810 -05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-01-22 20:27:46.815 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 200 null text/plain; charset=utf-8 2188.1639ms
+2025-01-22 20:29:09.206 -05:00 [INF] App has started at Serilog.
+2025-01-22 20:29:16.618 -05:00 [INF] User profile is available. Using 'C:\Users\mhariraman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-22 20:29:16.699 -05:00 [INF] App has started via Ilogger.
+2025-01-22 20:29:16.882 -05:00 [INF] Now listening on: https://localhost:7010
+2025-01-22 20:29:16.884 -05:00 [INF] Now listening on: http://localhost:5147
+2025-01-22 20:29:16.942 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 20:29:16.945 -05:00 [INF] Hosting environment: Development
+2025-01-22 20:29:16.946 -05:00 [INF] Content root path: C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src
+2025-01-22 20:29:18.348 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-01-22 20:29:20.452 -05:00 [INF] Executing endpoint '/Index'
+2025-01-22 20:29:20.536 -05:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-01-22 20:29:20.558 -05:00 [INF] Executing handler method PersonalExpenseTrackerSystem.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-01-22 20:29:21.988 -05:00 [INF] Reached Get method
+2025-01-22 20:29:21.990 -05:00 [INF] Executed handler method OnGet, returned result .
+2025-01-22 20:29:21.994 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-01-22 20:29:21.995 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-01-22 20:29:22.087 -05:00 [INF] Executed page /Index in 1544.8606ms
+2025-01-22 20:29:22.090 -05:00 [INF] Executed endpoint '/Index'
+2025-01-22 20:29:22.096 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 200 null text/html; charset=utf-8 3757.3001ms
+2025-01-22 20:29:22.153 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-01-22 20:29:22.177 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-01-22 20:29:22.178 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2025-01-22 20:29:22.184 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\css\site.css'
+2025-01-22 20:29:22.185 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 31.2606ms
+2025-01-22 20:29:22.185 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 7.8991ms
+2025-01-22 20:29:22.204 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/PersonalExpenseTrackerSystem.styles.css?v=KyLFfqc4TZzX0mWGXoLXJRDqckCVYMtksHULw25qzNk - null null
+2025-01-22 20:29:22.208 -05:00 [INF] Sending file. Request path: '/PersonalExpenseTrackerSystem.styles.css'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\obj\Debug\net8.0\scopedcss\bundle\PersonalExpenseTrackerSystem.styles.css'
+2025-01-22 20:29:22.209 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/PersonalExpenseTrackerSystem.styles.css?v=KyLFfqc4TZzX0mWGXoLXJRDqckCVYMtksHULw25qzNk - 200 1146 text/css 5.0627ms
+2025-01-22 20:29:22.225 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/jquery/dist/jquery.min.js - null null
+2025-01-22 20:29:22.230 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\jquery\dist\jquery.min.js'
+2025-01-22 20:29:22.231 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 6.6325ms
+2025-01-22 20:29:22.245 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-01-22 20:29:22.251 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2025-01-22 20:29:22.253 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 7.6113ms
+2025-01-22 20:29:22.266 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-01-22 20:29:22.269 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Projects\Azure\Mentor\PersonalExpenseTrackerSystem\src\wwwroot\js\site.js'
+2025-01-22 20:29:22.272 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 6.8698ms
+2025-01-22 20:29:22.286 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-22 20:29:22.292 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/_framework/aspnetcore-browser-refresh.js - 200 13808 application/javascript; charset=utf-8 6.9717ms
+2025-01-22 20:29:22.309 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7010/_vs/browserLink - null null
+2025-01-22 20:29:22.359 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7010/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.0794ms

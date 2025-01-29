@@ -10,7 +10,7 @@
             <td>
                 <div>
                     <label for="ID">ID:</label>
-                    <input type="text" name="ID" value="@Model.exp?.ID" readonly data-val="true" data-val-required="required" />
+                    <input type="text" name="ID" value="@Model.ExpenseModel?.ID" readonly data-val="true" data-val-required="required" />
 
                 </div>
             </td>
@@ -19,8 +19,8 @@
             <td>
                 <div>
                     <label for="Description">Expense Description:</label>
-                    <input type="text" name="Description" value="@Model.exp?.Description" data-val="true" data-val-required="required" />
-                    <span class="text-danger" asp-validation-for="Description"></span>
+                    <input type="text" name="Description" value="@Model.ExpenseModel?.Description" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="ExpenseModel.Description"></span>
 
                 </div>
             </td>
@@ -30,8 +30,8 @@
             <td>
                 <div>
                     <label for="Amount">Amount:</label>
-                    <input type="text" name="Amount" value="@Model.exp?.Amount" data-val="true" data-val-required="required" />                    
-                    <span class="text-danger" asp-validation-for="Amount"></span>
+                    <input type="text" name="Amount" value="@Model.ExpenseModel?.Amount" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="ExpenseModel.Amount"></span>
 
                 </div>
             </td>
@@ -40,8 +40,8 @@
             <td>
                 <div>
                     <label for="Category">Category:</label>
-                    <input type="text" name="Category" value="@Model.exp?.Category" data-val="true" data-val-required="required" />  
-                    <span class="text-danger" asp-validation-for="Category"></span>
+                    <input type="text" name="Category" value="@Model.ExpenseModel?.Category" data-val="true" data-val-required="required" />
+                    <span class="text-danger" asp-validation-for="ExpenseModel.Category"></span>
 
                 </div>
             </td>

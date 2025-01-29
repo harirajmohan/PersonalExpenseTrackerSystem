@@ -1,0 +1,1 @@
+2025-01-11 09:02:17.712 -05:00 [INF] App has started at Serilog.
